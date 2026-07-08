@@ -31,22 +31,23 @@
           Vue.js and MySQL.
         </p>
         <div class="mt-10 flex flex-wrap justify-center gap-4 lg:justify-start">
-          <button
-            class="rounded-xl bg-blue-600 px-7 py-3 font-semibold transition hover:bg-blue-700"
+          <RouterLink
+            class="rounded-xl border border-slate-700 px-7 py-3 font-semibold transition hover:bg-slate-800"
+            to="/projects"
           >
             View Projects
-          </button>
-          <button
+          </RouterLink>
+          <RouterLink
             class="rounded-xl border border-slate-700 px-7 py-3 font-semibold transition hover:bg-slate-800"
+            to="/contact"
           >
             Contact Me
-          </button>
+          </RouterLink>
         </div>
       </div>
       <!-- Right -->
       <div class="flex flex-1 justify-center">
         <div class="relative">
-          <!-- Glow -->
           <div
             class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 blur-3xl opacity-30"
           ></div>
