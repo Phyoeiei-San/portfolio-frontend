@@ -20,5 +20,16 @@ export const useProjectStore = defineStore("projects", {
         this.loading = false;
       }
     },
+    async fetchProjectDetail(id) {
+      this.loading = true;
+      try {
+        const response = await api.get(`/projects/${id}`);
+        this.project = response.data.data;
+      } catch (error) {
+        this.error = error.message;
+      } finally {
+        this.loading = false;
+      }
+    },
   },
 });
